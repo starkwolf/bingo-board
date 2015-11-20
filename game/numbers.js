@@ -4,6 +4,7 @@ var list = document.querySelector('.js-numbers')
 // Get existing numbers from _data
 var numbers = list.dataset.numbers
 // Make array of number, remove NULL (from the last comma)
+//just adding a test comment
 var currentNumbers = numbers.split(',').filter(function (number) { return !!number })
 // Find list of numbers in localStorage, if none found, start from empty array
 var memorizedList = localStorage.getItem('numbers') ? localStorage.getItem('numbers').split(',') : []
